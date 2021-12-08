@@ -5,6 +5,7 @@ import { getTooltipContainerStyles } from '../../themes/mixins';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import { Dimensions2D, GrafanaTheme2 } from '@grafana/data';
 import { calculateTooltipPosition } from './utils';
+import { Property } from 'csstype';
 
 /**
  * @public
@@ -12,6 +13,10 @@ import { calculateTooltipPosition } from './utils';
 export interface VizTooltipContainerProps extends HTMLAttributes<HTMLDivElement> {
   position: { x: number; y: number };
   offset: { x: number; y: number };
+  // FIXME: how to leave a comment for a specific parameter?
+  // disabling pointer-events is to prevent the tooltip from flickering when moving left to right
+  // see e.g. https://github.com/grafana/grafana/pull/33609
+  pointerEvent?: Property.PointerEvents;
   children?: React.ReactNode;
 }
 
@@ -21,6 +26,7 @@ export interface VizTooltipContainerProps extends HTMLAttributes<HTMLDivElement>
 export const VizTooltipContainer: React.FC<VizTooltipContainerProps> = ({
   position: { x: positionX, y: positionY },
   offset: { x: offsetX, y: offsetY },
+  pointerEvent,
   children,
   className,
   ...otherProps
@@ -82,6 +88,8 @@ export const VizTooltipContainer: React.FC<VizTooltipContainerProps> = ({
 
   const styles = useStyles2(getStyles);
 
+  // TODO: remove me
+  console.log(placement);
   return (
     <div
       ref={tooltipRef}
@@ -90,10 +98,11 @@ export const VizTooltipContainer: React.FC<VizTooltipContainerProps> = ({
         left: 0,
         // disabling pointer-events is to prevent the tooltip from flickering when moving left to right
         // see e.g. https://github.com/grafana/grafana/pull/33609
-        pointerEvents: 'none',
+        pointerEvents: pointerEvent ? pointerEvent : 'none',
         top: 0,
-        transform: `translate(${placement.x}px, ${placement.y}px)`,
-        transition: 'transform ease-out 0.1s',
+        // FIXME: needed to be able to have the tool tip hovering
+        // transform: `translate(${placement.x}px, ${placement.y}px)`,
+        // transition: 'transform ease-out 2.1s',
       }}
       {...otherProps}
       className={cx(styles.wrapper, className)}

@@ -304,9 +304,10 @@ export class GeomapPanel extends Component<Props, State> {
   };
 
   clearTooltip = () => {
-    if (this.state.ttip) {
-      this.setState({ ttip: undefined });
-    }
+    // FIXME: need to be able to disabled this for our toooltips
+    // if (this.state.ttip) {
+    //   this.setState({ ttip: undefined });
+    // }
   };
 
   pointerMoveListener = (evt: MapBrowserEvent<UIEvent>) => {
@@ -546,6 +547,16 @@ export class GeomapPanel extends Component<Props, State> {
   render() {
     const { ttip, topRight, bottomLeft } = this.state;
 
+    /*
+     TODO: 
+     make better container for info of a object within the geomap
+
+     check if we instead want to use something like popup, 
+     search "Add annotation" in any timeseries, stays if you click it
+     OR
+     contextMenuPlugin
+     see: https://github.com/grafana/hackathon-2021-12-grafanearsta/blob/f0a108afb378c3dd90975eea773915885bf0d2a2/public/app/plugins/panel/market-trend/MarketTrendPanel.tsx#L265
+    */
     return (
       <>
         <Global styles={this.globalCSS} />
@@ -555,7 +566,11 @@ export class GeomapPanel extends Component<Props, State> {
         </div>
         <Portal>
           {ttip && (ttip.data || ttip.feature) && (
-            <VizTooltipContainer position={{ x: ttip.pageX, y: ttip.pageY }} offset={{ x: 10, y: 10 }}>
+            <VizTooltipContainer
+              position={{ x: ttip.pageX, y: ttip.pageY }}
+              offset={{ x: 10, y: 10 }}
+              pointerEvent={'auto'}
+            >
               <DataHoverView {...ttip} />
             </VizTooltipContainer>
           )}
