@@ -39,7 +39,7 @@ RUN go mod verify
 RUN make build-go
 
 # Final stage
-FROM alpine:3.14.3
+FROM alpine:3.14
 
 LABEL maintainer="Grafana team <hello@grafana.com>"
 
