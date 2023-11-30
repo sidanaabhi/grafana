@@ -3758,7 +3758,7 @@ __metadata:
     monaco-editor: 0.27.0
     postcss: 8.3.11
     postcss-loader: 6.1.1
-    prismjs: 1.25.0
+    prismjs: 1.27.0
     raw-loader: 4.0.2
     rc-cascader: 1.5.0
     rc-drawer: 4.4.0
@@ -19232,7 +19232,7 @@ __metadata:
     postcss-reporter: 7.0.2
     postcss-scss: 4.0.2
     prettier: 2.2.1
-    prismjs: 1.25.0
+    prismjs: 1.27.0
     prop-types: 15.7.2
     raw-loader: 4.0.2
     rc-cascader: 1.5.0
@@ -27878,7 +27878,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prismjs@npm:1.25.0, prismjs@npm:^1.21.0, prismjs@npm:~1.25.0":
+"prismjs@npm:1.27.0":
+  version: 1.27.0
+  resolution: "prismjs@npm:1.27.0"
+  checksum: 85c7f4a3e999073502cc9e1882af01e3709706369ec254b60bff1149eda701f40d02512acab956012dc7e61cfd61743a3a34c1bd0737e8dbacd79141e5698bbc
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.21.0, prismjs@npm:~1.25.0":
   version: 1.25.0
   resolution: "prismjs@npm:1.25.0"
   checksum: 04d8eae9d1b26b76c350bc65621584c8f8cab80ace7da3953f8aef2f9a8dd4b4f71c1d15bc5c67f126ddc90cd5af613919dc1340589a6c57355bed86fa3ac010
