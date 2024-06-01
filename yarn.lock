@@ -3374,7 +3374,7 @@ __metadata:
     lodash: 4.17.21
     marked: 4.0.5
     moment: 2.29.1
-    moment-timezone: 0.5.33
+    moment-timezone: 0.5.35
     ol: 6.7.0
     papaparse: 5.3.0
     react: 17.0.1
@@ -3910,7 +3910,7 @@ __metadata:
     lru-memoize: ^1.1.0
     memoize-one: 6.0.0
     moment: 2.29.1
-    moment-timezone: 0.5.33
+    moment-timezone: 0.5.35
     prop-types: 15.7.2
     react: 17.0.1
     react-dom: 17.0.1
@@ -19214,7 +19214,7 @@ __metadata:
     memoize-one: 6.0.0
     mini-css-extract-plugin: 2.4.4
     moment: 2.29.1
-    moment-timezone: 0.5.33
+    moment-timezone: 0.5.35
     monaco-editor: 0.27.0
     monaco-promql: ^1.7.2
     mousetrap: 1.6.5
@@ -24656,12 +24656,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment-timezone@npm:0.5.33":
-  version: 0.5.33
-  resolution: "moment-timezone@npm:0.5.33"
+"moment-timezone@npm:0.5.35":
+  version: 0.5.35
+  resolution: "moment-timezone@npm:0.5.35"
   dependencies:
     moment: ">= 2.9.0"
-  checksum: dea6043b4a21aedf2e64d545cdfc795a11e0739edb06f4eb10570503118cb1fe4ab57e012a5f3594bd1cdd2a3c617f42836fb6e4faff33eb25a1fe3cc239c9bf
+  checksum: 0f3907282dc9ae3d405fefaccf486dc4222945ff479127fd269e6c4ddc25e526e7ca9e849d6bf941c871bd17e875b256bdb276137a55db9fce4177c792a003df
   languageName: node
   linkType: hard
 
