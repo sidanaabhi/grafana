@@ -41,7 +41,7 @@
     "lodash": "4.17.21",
     "lru-memoize": "^1.1.0",
     "memoize-one": "6.0.0",
-    "moment": "2.29.1",
+    "moment": "2.29.4",
     "moment-timezone": "0.5.33",
     "prop-types": "15.7.2",
     "react": "17.0.1",
