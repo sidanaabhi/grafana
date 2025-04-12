@@ -13251,12 +13251,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"centrifuge@npm:2.7.5":
-  version: 2.7.5
-  resolution: "centrifuge@npm:2.7.5"
+"centrifuge@npm:2.7.6":
+  version: 2.7.6
+  resolution: "centrifuge@npm:2.7.6"
   dependencies:
     protobufjs: ^6.10.2
-  checksum: 63c7cc487e38280e0cec3d984fe0fa6096654dae1d8920d004a5882d0bfd7d4591b5d0e11d7ca204ecbac0bdff104a95e1368df9ae76e5ef305847a04bfa45c0
+  checksum: ec7b46fb056714cfda3fcc387f0c5f270106c37f4a55d24a6debb8c915f3ae6c54e0fc17b38a1e0c83b85fb60209e28a2b6567194416691fd93d3a302619d1e8
   languageName: node
   linkType: hard
 
@@ -19149,7 +19149,7 @@ __metadata:
     baron: 3.0.3
     brace: 0.11.1
     calculate-size: 1.1.1
-    centrifuge: 2.7.5
+    centrifuge: 2.7.6
     classnames: 2.2.6
     clipboard: 2.0.4
     comlink: 4.3.1
