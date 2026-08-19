@@ -3011,6 +3011,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/css@npm:11.5.0":
+  version: 11.5.0
+  resolution: "@emotion/css@npm:11.5.0"
+  dependencies:
+    "@emotion/babel-plugin": ^11.0.0
+    "@emotion/cache": ^11.5.0
+    "@emotion/serialize": ^1.0.0
+    "@emotion/sheet": ^1.0.3
+    "@emotion/utils": ^1.0.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+  checksum: 45d01333c36a6449fcc4415470088ef2ee515d48a76d054bce9cf5c45fba17e5eec661aed34b4ea38f7003fd6a7e15ddf781e921977b4428875674621ef037f0
+  languageName: node
+  linkType: hard
+
 "@emotion/css@npm:^10.0.27, @emotion/css@npm:^10.0.9":
   version: 10.0.27
   resolution: "@emotion/css@npm:10.0.27"
@@ -19025,7 +19043,7 @@ __metadata:
     "@babel/preset-env": 7.16.4
     "@babel/preset-react": 7.16.0
     "@babel/preset-typescript": 7.16.0
-    "@emotion/css": 11.1.3
+    "@emotion/css": 11.5.0
     "@emotion/eslint-plugin": 11.2.0
     "@emotion/react": 11.1.5
     "@grafana/api-documenter": 7.11.2
