@@ -19225,7 +19225,7 @@ __metadata:
     node-notifier: ^10.0.0
     nodemon: 2.0.2
     ol: 6.7.0
-    papaparse: 5.3.0
+    papaparse: 5.7.1
     pluralize: ^8.0.0
     postcss: 8.3.6
     postcss-loader: 6.2.0
@@ -26127,6 +26127,13 @@ __metadata:
   version: 5.3.0
   resolution: "papaparse@npm:5.3.0"
   checksum: 2fcf050facf60d2ffb877b0b35769df5576c3434b28057c179d363be7423b2172cb9f5e17cfb06603f956481721b6df95354548b0596432d515162c84189cb97
+  languageName: node
+  linkType: hard
+
+"papaparse@npm:5.7.1":
+  version: 5.7.1
+  resolution: "papaparse@npm:5.7.1"
+  checksum: 84566e43509a6c7139a796b2526f3e6959207a4eefe17b2442734b5fbdb0d559669f517aea494a7adaf87486c80658053794e356a28eb7dcc164512b9f4beb7c
   languageName: node
   linkType: hard
 
